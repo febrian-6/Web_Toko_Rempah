@@ -1,0 +1,73 @@
+/* CSSINPUT.css */
+
+/* --- Body Style --- */
+/* Mengatur font umum pada seluruh halaman dan memberikan margin di sekitar halaman */
+body {
+  font-family: Arial, sans-serif; /* Mengatur jenis font menjadi Arial */
+  margin: 20px; /* Memberikan ruang kosong di sekitar halaman */
+}
+
+/* --- Form Style --- */
+/* Menata elemen form untuk terlihat lebih rapi */
+form {
+  display: flex; /* Mengatur elemen form agar tersusun secara fleksibel */
+  flex-direction: column; /* Mengatur elemen form tersusun secara vertikal */
+  gap: 10px; /* Menambahkan jarak antar elemen form sebesar 10px */
+  max-width: 400px; /* Membatasi lebar maksimal form menjadi 400px */
+  margin: auto; /* Membuat form berada di tengah secara horizontal */
+}
+
+/* --- Input Fields --- */
+/* Menata input teks, angka, dan textarea agar seragam */
+input, textarea {
+  width: 100%; /* Mengatur lebar elemen input/textarea mengikuti lebar form */
+  padding: 10px; /* Memberikan ruang di dalam elemen input/textarea */
+  font-size: 16px; /* Mengatur ukuran teks dalam elemen input/textarea */
+  border: 1px solid #ccc; /* Memberikan garis batas abu-abu di sekitar elemen */
+  border-radius: 5px; /* Membuat sudut elemen menjadi sedikit melengkung */
+}
+
+/* --- Submit Button --- */
+/* Menata tombol submit agar terlihat menonjol */
+button[type="submit"] {
+  background-color: blue; /* Memberikan warna latar biru pada tombol */
+  color: white; /* Mengatur warna teks menjadi putih */
+  border: none; /* Menghapus garis batas di sekitar tombol */
+  padding: 10px 15px; /* Memberikan ruang horizontal dan vertikal pada tombol */
+  font-size: 16px; /* Mengatur ukuran teks pada tombol */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+  border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+}
+
+/* --- Close Button --- */
+/* Menata tombol close agar berada di kanan atas halaman */
+button.close-button {
+  position: absolute; /* Menempatkan tombol secara absolut terhadap halaman */
+  top: 10px; /* Memberikan jarak 10px dari atas halaman */
+  right: 10px; /* Memberikan jarak 10px dari kanan halaman */
+  background-color: red; /* Memberikan warna latar merah pada tombol */
+  color: white; /* Mengatur warna teks menjadi putih */
+  border: none; /* Menghapus garis batas di sekitar tombol */
+  padding: 10px 15px; /* Memberikan ruang horizontal dan vertikal pada tombol */
+  font-size: 16px; /* Mengatur ukuran teks pada tombol */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+  border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+}
+
+/* --- WhatsApp Button --- */
+/* Menata tombol WhatsApp agar terlihat mencolok dengan warna hijau */
+button.whatsapp-button {
+  background-color: green; /* Memberikan warna latar hijau pada tombol */
+  color: white; /* Mengatur warna teks menjadi putih */
+  border: none; /* Menghapus garis batas di sekitar tombol */
+  padding: 10px 15px; /* Memberikan ruang horizontal dan vertikal pada tombol */
+  font-size: 16px; /* Mengatur ukuran teks pada tombol */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+  border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+}
+
+/* --- Spacing Between Buttons --- */
+/* Menambahkan jarak vertikal antara tombol submit dan tombol WhatsApp */
+button + button {
+  margin-top: 10px; /* Memberikan jarak 10px di atas tombol berikutnya */
+}

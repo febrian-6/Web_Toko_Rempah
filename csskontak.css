@@ -1,0 +1,23 @@
+.logo { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center; 
+}
+
+.wa {
+    max-width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 1rem; 
+    background-color: white; /* Membuat latar belakang tetap putih */
+    padding: 10px; /* Memberikan jarak antara logo dan background */
+}
+
+body {
+    background-color: rgb(224, 151, 98); /* Warna coklat */
+    color: white; /* Agar teks lebih kontras dan mudah dibaca */
+}

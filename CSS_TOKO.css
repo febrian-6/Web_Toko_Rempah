@@ -1,0 +1,107 @@
+
+.scroll-container {
+    margin-top: 5vh; /*jarak antara navbar dan card*/
+    display: flex; /*membuat card horizontal*/
+    flex-wrap: nowrap; /* Supaya elemen tetap dalam barisan */
+    gap: 3rem; /*jarak antar kartu*/
+    overflow-x: scroll; /* membuat scrolling secara horizontal */
+    scroll-snap-type: x mandatory; /*agar scrol lengket*/
+   
+}
+    
+
+.card {
+    scroll-snap-align: start; /*agar crol lengket di awal*/
+
+    flex-shrink: 0; /* supaya card tidak mengecil */
+    color: white;
+    background-color: rgb(136, 72, 26);
+
+}
+
+
+.card:hover{
+    background-color:  rgb(160, 85, 32); /* Warna latar belakang tombol saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+
+.card-img-top {
+    width: 100%; /* ukuran 100% dari lebar kartu */
+    height: 150px; /* Tinggi gambar 150px */
+    object-fit: cover; /* Memotong gambar jika melebihi card*/
+    border-radius: 10px; /*membuat sudut menjadi tumpul*/
+}
+
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* menyembunyikan tombol scrol */
+    margin-bottom: 30px; /* memberi jarak antara card dan tombol scrol */
+}
+
+.foto {
+
+    margin-top: 60px; /* Jarak atas untuk gambar */
+    display: flex; /* Menggunakan flexbox untuk memusatkan elemen */
+    justify-content: center; /* Memusatkan di tengah secara horizontal */
+    align-items: center; /* Memusatkan di tengah secara vertikal  */
+    flex-direction: column; /*membuat elemen yang didalam div foto menjadi horizontal*/
+}
+
+.foto img {
+    width: 70%; /* Ukuran gambar 70% dari lebar layar */
+    height: auto; /* menyesuaikan tingginya dengan lebarnya */
+    border-radius: 10px; /* membuat sudut gambar lebih tumpul */
+}
+
+.teks {
+    margin-top: 20px; /*memberi jarak antara judul dengan foto*/
+    color: rgb(0, 0, 0);
+
+}
+
+.isiteks {
+   
+    margin: 20px 5%; /* memberi Jarak judul dan futer sejauh 20px, 5% untuk jarak kanan kiri jaraknya 5% */
+    text-align: justify; /* Menyelaraskan teks ke kiri dan kanan */
+    line-height: 1.5; /*jarak antar baris teks*/
+    color: #000000; /* warna teks*/
+
+}
+
+.futer {
+   
+    margin-top: 20px; /*jarak antara futer dan isi teks*/
+    background-color:black ; /*warna backgroun*/
+    height: 20vh; /*tinggi futer 20*/
+    width: auto; /*menyesuikan layar*/
+}
+
+.selesai{
+    align-items: center;/*membuat selesai di tengah secara vertikal*/
+    display: flex;/*mengaktifkan flexbok*/
+    justify-content: center;/*membuat selesai di tengah secara horisontal*/
+    color: rgb(255, 255, 255);
+    font-size: 2rem; 
+    height: 20vh;/*menyesuikan dengan futer*/
+    width: auto;
+
+}
+
+.body{
+    background-color: rgb(224, 151, 98);
+}
+
+
+a.btn.btn-primary{
+background-color: rgb(86, 48, 48);
+border: none;
+}
+
+a.btn.btn-primary:hover {
+    background-color: rgb(64, 28, 2); /* Warna latar belakang tombol saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+
+
